@@ -4,7 +4,11 @@ const client = require("./client");
 
 // user functions
 async function createUser({ username, password }) {
-  
+  try {
+    console.log("Creating USERS to use")
+  } catch (error) {
+    
+  }
 }
 
 async function getUser({ username, password }) {
