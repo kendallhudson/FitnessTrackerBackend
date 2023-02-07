@@ -13,8 +13,9 @@ async function dropTables() {
     DROP TABLE IF EXISTS users;
     `)
 
-    console.log("DOne Droping Tables")
+    console.log("Done Dropping Tables")
   } catch (error) {
+    console.log("Error Dropping Tables")
     throw error;
   }
   // drop all tables, in the correct order '
@@ -53,8 +54,9 @@ async function createTables() {
         UNIQUE ("routineId","activityId")
       );
     `)
-    console.log("Done Creating Tables")
+    console.log("Done Building tables")
   } catch (error) {
+    console.log("Error Building Tables")
     throw error
   }
 }
